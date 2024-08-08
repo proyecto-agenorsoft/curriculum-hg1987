@@ -1,0 +1,157 @@
+/* Importar fuente Roboto y Font Awesome */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #0d1b2a; /* Fondo negro azulado */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1b263b; /* Fondo más oscuro */
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #3aafa9; /* Color cambiado */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.logo-subtext {
+    font-size: 1em;
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1b2a;
+    text-align: center;
+    padding: 20px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px; /* Ancho máximo para centrar contenido */
+    margin: 0 auto;
+}
+
+.intro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #1b263b; /* Añadir borde para mejor contraste */
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #ffffff;
+}
+
+.subheading {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.description {
+    font-size: 1.1em;
+    color: #d1d1d1;
+    line-height: 1.8; /* Aumentar el interlineado */
+    text-align: center; /* Centrar el texto */
+    max-width: 600px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Centrar los botones */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.curriculum {
+    background-color: #3aafa9; /* Azul verdoso */
+}
+
+.proyectos {
+    background-color: #2b7a78; /* Azul oscuro */
+}
+
+
+.btn:hover {
+    background-color: #1b9c92; /* Cambiar color al pasar el ratón */
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1b263b;
+    color: #ffffff;
+}
+
+.contact-info, .social-media, .legal {
+    text-align: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5em; /* Tamaño de los íconos */
+}

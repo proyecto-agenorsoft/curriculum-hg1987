@@ -1,0 +1,186 @@
+/* Importar fuente Roboto y Font Awesome */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Estilos generales para el cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #0d1b2a; /* Fondo negro azulado */
+}
+
+/* Estilos para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1b263b; /* Fondo más oscuro */
+    color: #ffffff;
+}
+
+/* Estilos para el logo dentro del header */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #3aafa9; /* Color cambiado */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.logo-subtext {
+    font-size: 1em;
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+/* Estilos para la navegación dentro del header */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Estilos para el contenido principal */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #0d1b2a;
+}
+
+/* Estilos para las secciones */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Estilos para la línea de tiempo (timeline) */
+.timeline {
+    position: relative;
+    margin: 20px auto;
+    padding: 10px 40px;
+    list-style: none;
+    max-width: 800px; /* Limitamos el ancho máximo para centrar el contenido */
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ffffff;
+}
+
+/* Estilos para los ítems dentro de la línea de tiempo */
+.timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 0.9em; /* Ajuste de tamaño de fuente */
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.timeline-item-content {
+    width: 40%;
+    padding: 20px;
+    background: #1b263b; /* Fondo más oscuro */
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border: none; /* Eliminar borde */
+}
+
+.timeline-item .date {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 0.9em; /* Ajuste de tamaño de fuente */
+}
+
+.timeline-item .title {
+    font-size: 1.1em; /* Ajuste de tamaño de fuente */
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold; /* Texto en negrita */
+}
+
+.timeline-item .company {
+    font-style: italic; /* Texto en cursiva */
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.timeline-item .description {
+    font-size: 0.9em; /* Ajuste de tamaño de fuente */
+    line-height: 1.5; /* Interlineado mayor */
+    margin-top: 10px; /* Espacio entre EMPRESA y el párrafo */
+}
+
+/* Estilos para el footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1b263b;
+    color: #ffffff;
+}
+
+.contact-info, .social-media, .legal {
+    text-align: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5em; /* Tamaño de los íconos */
+}
